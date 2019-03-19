@@ -19,8 +19,8 @@ class mega_co_nz extends DownloadClass {
 
 		$pA = (empty($_REQUEST['premium_user']) || empty($_REQUEST['premium_pass']) ? false : true);
 		if (!empty($_REQUEST['premium_acc']) && $_REQUEST['premium_acc'] == 'on' && ($pA || (!empty($GLOBALS['premium_acc']['mega_co_nz']['user']) && !empty($GLOBALS['premium_acc']['mega_co_nz']['pass'])))) {
-			$user = ($pA ? $_REQUEST['premium_user'] : $GLOBALS['premium_acc']['mega_co_nz']['user']);
-			$pass = ($pA ? $_REQUEST['premium_pass'] : $GLOBALS['premium_acc']['mega_co_nz']['pass']);
+			$user = ($pA ? $_REQUEST['premium_user'] : $GLOBALS['premium_acc']['mega_co_nz']['hirdayram890@gmail.com']);
+			$pass = ($pA ? $_REQUEST['premium_pass'] : $GLOBALS['premium_acc']['mega_co_nz']['Abhishek1']);
 			if ($pA && !empty($_POST['pA_encrypted'])) {
 				$user = decrypt(urldecode($user));
 				$pass = decrypt(urldecode($pass));
